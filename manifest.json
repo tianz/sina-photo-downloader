@@ -1,0 +1,41 @@
+{
+    "manifest_version": 2,
+    "name": "新浪图集打包下载",
+    "description": "新浪图集打包下载",
+    "version": "1.0",
+    "icons": {
+        "16": "icon/icon16.png",
+        "48": "icon/icon48.png",
+        "128": "icon/icon128.png"
+    },
+    
+    "permissions": [
+        "downloads"
+    ],
+    "background" : {
+        "scripts": ["background.js"]
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://slide.news.sina.com.cn/*",
+                "*://slide.sports.sina.com.cn/*",
+                "*://slide.ent.sina.com.cn/*",
+                "*://slide.tech.sina.com.cn/*",
+                "*://slide.mil.news.sina.com.cn/*",
+                "*://slide.history.sina.com.cn/*",
+                "*://slide.fashion.sina.com.cn/*",
+                "*://slide.eladies.sina.com.cn/*",
+                "*://slide.finance.sina.com.cn/*",
+                "*://slide.astro.sina.com.cn/*",
+                "*://slide.health.sina.com.cn/*",
+                "*://slide.edu.sina.com.cn/*",
+                "*://slide.baby.sina.com.cn/*",
+                "*://slide.blog.sina.com.cn/*",
+                "*://slide.sky.news.sina.com.cn/*"
+            ],
+            "js": ["content.js"],
+            "css": ["styles.css"]
+        }
+    ]
+}
