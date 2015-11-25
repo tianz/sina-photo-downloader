@@ -1,13 +1,15 @@
 {
     "manifest_version": 2,
     "name": "新浪图集打包下载",
-    "description": "新浪图集打包下载",
+    "short_name": "新浪图集打包下载",
     "version": "1.0",
+    "description": "在新浪图集原有的UI基础上新增打包下载的链接，一键下载整个新浪图集",
     "icons": {
         "16": "icon/icon16.png",
         "48": "icon/icon48.png",
         "128": "icon/icon128.png"
     },
+    "author": "Tian Zhou",
     
     "permissions": [
         "downloads"
