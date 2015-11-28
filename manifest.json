@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "新浪图集打包下载",
     "short_name": "新浪图集打包下载",
-    "version": "1.0",
+    "version": "1.1",
     "description": "在新浪图集原有的UI基础上新增打包下载的链接，一键下载整个新浪图集",
     "icons": {
         "16": "icon/icon16.png",
@@ -15,7 +15,7 @@
         "downloads"
     ],
     "background" : {
-        "scripts": ["background.js"]
+        "scripts": ["js/background.js"]
     },
     "content_scripts": [
         {
@@ -36,8 +36,15 @@
                 "*://slide.blog.sina.com.cn/*",
                 "*://slide.sky.news.sina.com.cn/*"
             ],
-            "js": ["content.js"],
-            "css": ["styles.css"]
+            "js": ["js/common.js", "js/content.js"],
+            "css": ["css/styles.css"]
+        },
+        {
+            "matches": [
+                "*://slide.games.sina.com.cn/*"
+            ],
+            "js": ["js/common.js", "js/content_games.js"],
+            "css": ["css/styles_games.css"]
         }
     ]
 }
