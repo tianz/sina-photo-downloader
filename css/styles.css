@@ -1,9 +1,9 @@
 #downloadDiv {
-    text-align: right;
-    padding: 0 26px 10px;
-    font: 12px/20px "Microsoft Yahei", "微软雅黑", "SimSun", "宋体", "Arial Narrow", serif;
+  text-align: right;
+  padding: 0 26px 10px;
+  font: 12px/20px "Microsoft Yahei", "微软雅黑", "SimSun", "宋体", "Arial Narrow", serif;
 }
 
 #downloadA, #downloadA:visited {
-    color: #666;
+  color: #666;
 }
